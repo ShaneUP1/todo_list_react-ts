@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styles from './TodoListDisplay.module.css';
 
 interface Props {
   todoList: Array<Todo>
@@ -8,9 +9,9 @@ interface Props {
 const TodoListDisplay: React.FC<Props> = ({todoList, clickHandler}) => {
   const todoElements = todoList.map(todo => (
     
-    <li>
+    <li className={styles.li}>
       {todo.description}
-      <button onClick={clickHandler} value={todo.description} >Completed</button>
+      <button className={styles.completeButton} onClick={clickHandler} value={todo.description} >Completed</button>
     </li>
   ))
 

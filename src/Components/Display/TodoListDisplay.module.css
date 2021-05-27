@@ -1,0 +1,13 @@
+.li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.completeButton {
+  margin-left: 10px;
+}
+
+ul {
+  padding: 0px;
+  padding-top: 0px;
+}

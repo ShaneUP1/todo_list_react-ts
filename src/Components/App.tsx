@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../App.css';
 import TodoListDisplay from './Display/TodoListDisplay';
 import InputForm from './UserForm/InputForm';
+import styles from './App.module.css';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={styles.app}>
       hello world
       <InputForm description={todo.description} onSubmit={handleSubmit} onChange={handleChange}/>
       <TodoListDisplay todoList={todoList} clickHandler={clickHandler} />
